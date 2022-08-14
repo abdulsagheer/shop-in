@@ -1,9 +1,15 @@
-type Props = {};
+import { Partners } from "../../components/Partners";
+import ShopQuality from "../../components/ShopQuality";
+import BestSeller from "../../components/BestSeller";
+import "./style.css";
 
-const Home = (props: Props) => {
+const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="homepage-container">
+      <div className="cover-image" />
+      <ShopQuality />
+      <BestSeller />
+      <Partners />
     </div>
   );
 };
